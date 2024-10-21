@@ -9,6 +9,8 @@ body {
     color: #777777;
 }
 
+/* General */
+
 p {
     margin: 18px 0;
 }
@@ -28,17 +30,28 @@ h1 {
     font-size: 30px;
 }
 
+h2 {
+    text-align: center;
+    position: absolute;
+    bottom: 5px;
+    background-color: #4aaaa5;
+    width: 100%;
+    padding: 15px;
+}
+
 header {
     border-bottom: 3px solid #dddddd;
     position: sticky;
     top: 0;
     background: #ffff;
     margin-bottom: 40px;
+    z-index: 99;
 }
 
 a {
     text-decoration: none;
 }
+/* Nav Bar */
 
 .nav-bar a {
     border-left: 1px solid #ddd;
@@ -68,11 +81,13 @@ a {
     float: right;
     margin: 25px 0 0 0;
 }
+/* Content Section */
 
 .main-section {
     border: 3px solid #dddddd;
     padding: 30px;
     margin: 0 0 40px;
+    overflow: auto;
 }
 
 #content-wrapper {
@@ -83,6 +98,25 @@ a {
     float: left;
     margin: 25px 25px 0 0;
 }
+
+/* Project Section */
+
+.project {
+    float: left;
+    position: relative;
+    margin: 20px 0 25px;
+}
+
+.project:nth-child(even) {
+    margin-right: 50px;
+}
+
+.pjt-img {
+    height: 240px;
+    width: 274px;
+}
+
+/* Footer */
 
 footer {
     text-align: center;
